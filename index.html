@@ -2,16 +2,50 @@
 <html lang="en-US">
 <head>
   <title>Court House Look Book</title>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous">
+  </script>
   <script type="text/javascript" src="javascript/turn.min.js"></script>
   <link href="stylesheets/default.css" rel="stylesheet" title="Default Style">
 </head>
 <body>
-<h1>Court House Look Book</h1>
 
-<p>
-Our look book
-</p>
+  <div id="lookbook">
 
-<img src="images/SaarinenExecutiveArmChair.jpg" />
+    <div class="hard">Court House Look Book</div>
+
+    <div>
+      <h1>Court House Look Book</h1>
+
+      <p>
+        Our look book
+      </p>
+
+      <img src="images/SaarinenExecutiveArmChair.jpg" />
+    </div>
+
+    <div>
+      <h1>This is the second page</h1>
+
+      <p>
+        Oh look, another page.  Awesome.
+      </p>
+
+      <img src="images/bluechair.jpg" />
+    </div>
+
+    <div class="hard"></div>
+
+  </div>
+
+  <script type="text/javascript">
+  	$("#lookbook").turn({
+  		width: 800,
+  		height: 600,
+  		autoCenter: true
+  	});
+  </script>
 </body>
 </html>
